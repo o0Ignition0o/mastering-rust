@@ -20,18 +20,21 @@ enum Being {
     Human,
 }
 
+#[allow(dead_code)]
 struct Square {
     ground: TerrainGround,
     block: Option<TerrainBlock>,
     beings: Option<Being>,
 }
 
+#[allow(dead_code)]
 struct Grid {
     size: (usize, usize),
     squares: Vec<Square>,
 }
 
 impl Grid {
+    #[allow(dead_code)]
     fn generate_empty(size_x: usize, size_y: usize) -> Grid {
         let number_of_squares = size_x * size_y;
         let mut squares: Vec<Square> = Vec::with_capacity(number_of_squares);
@@ -49,6 +52,10 @@ impl Grid {
             squares: squares,
         }
     }
+}
+
+fn main() {
+    println!("Welcome to the fanstr-buigam game !");
 }
 
 #[cfg(test)]
