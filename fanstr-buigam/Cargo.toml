@@ -1,0 +1,7 @@
+[package]
+name = "fanstr-buigam"
+version = "0.1.0"
+authors = ["o0Ignition0o <jeremy.lempereur@gmail.com>"]
+description = "Mastering rust, fantasy strategy building game"
+
+[dependencies]
